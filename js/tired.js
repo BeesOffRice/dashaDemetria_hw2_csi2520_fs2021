@@ -33,12 +33,13 @@ function addComment(ev){
     let comDiv = document.createElement("div");
     comDiv.className="comDiv";
     const textbox = document.createElement("div");
+    textbox.setAttribute("class","commText")
     const replyButton = document.createElement("button");
     replyButton.className="reply";
     replyButton.innerHTML="Write a Reply";
     let commentText;
 
-    if(ev.target.parentElement=="div"){
+    if(ev.target==submitButton){
         commentText = commentBox.value;
         textbox.innerHTML=commentText;
         commentBox.value =" ";
@@ -75,7 +76,7 @@ function replyfunc(e){
         divcont.append(textArea,subReply);
         parent.appendChild(divcont);
     } else if (e.target.className=="subReply"){
-        e.addComment;
+        addComment(e);
     }
 }
 

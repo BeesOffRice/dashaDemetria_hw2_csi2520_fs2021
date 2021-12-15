@@ -29,15 +29,23 @@ footer{
     line-height: 30px;
 }
 
+h1{
+    text-align: center;
+}
+
+main{
+    text-align: center;
+}
+
 .comDiv{
     background-color:rgb(170, 214, 255);
     padding:2%;
     margin:1%;
     font-size: 14pt;
-
 }
 
-.replyCont{
+.commText{
+    padding: 1%;
     border-style:solid;
-    border-color: black;
+    border-color:black;
 }
